@@ -51,4 +51,8 @@ input.onGesture(Gesture.Shake, function() {
   # . . . #
   # # # # #
   `)
+
+  // pause and show you are ready again
+  basic.pause(1000)
+  basic.showIcon(IconNames.Happy)
 })
