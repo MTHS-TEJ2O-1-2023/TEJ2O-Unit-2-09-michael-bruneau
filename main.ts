@@ -11,6 +11,17 @@ basic.showIcon(IconNames.Happy)
 
 // variables
 let randomNumber: number = -1
+let score: number = 0
+
+// increase score
+input.onButtonPressed(Button.A, function () {
+  score = score + 1
+  basic.showIcon(IconNames.Yes)
+})
+
+input.onButtonPressed(Button.B, function () {
+  basic.showNumber(score)
+})
 
 input.onGesture(Gesture.Shake, function() {
   randomNumber = randint(0, 2)
