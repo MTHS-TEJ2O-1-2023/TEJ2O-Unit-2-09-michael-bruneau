@@ -23,5 +23,11 @@ input.onGesture(Gesture.Shake, function() {
 
   // if randomNumber was 1
   if (randomNumber == 1)
-  basic.showIcon(IconNames.Rock)
+  basic.showLeds(`
+  . . . . .
+  . # # # .
+  . # # # .
+  . # # # .
+  . . . . .
+  `)
 })
