@@ -23,18 +23,18 @@ input.onButtonPressed(Button.B, function () {
   basic.showNumber(score)
 })
 
-input.onGesture(Gesture.Shake, function() {
+input.onGesture(Gesture.Shake, function () {
   randomNumber = randint(0, 2)
   basic.clearScreen()
 
   // if randomNumber was 0
   if (randomNumber == 0) {
-  basic.showIcon(IconNames.Scissors)
-}
+    basic.showIcon(IconNames.Scissors)
+  }
 
   // if randomNumber was 1
   if (randomNumber == 1)
-  basic.showLeds(`
+    basic.showLeds(`
   . . . . .
   . # # # .
   . # # # .
@@ -44,7 +44,7 @@ input.onGesture(Gesture.Shake, function() {
 
   // if randomNumber was 2
   if (randomNumber == 2)
-  basic.showLeds(`
+    basic.showLeds(`
   # # # # #
   # . . . #
   # . . . #
