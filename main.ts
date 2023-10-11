@@ -17,11 +17,13 @@ let score: number = 0
 input.onButtonPressed(Button.A, function () {
   score = score + 1
   basic.showIcon(IconNames.Yes)
+  basic.pause(1000)
   basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
   basic.showNumber(score)
+  basic.pause(1000)
   basic.showIcon(IconNames.Happy)
 })
 
