@@ -19,19 +19,19 @@ while True:
     
     gesture = accelerometer.current_gesture()
     if gesture == "face up":
-        random.randint(0, 2)
+        random_number = random.randint(0, 2)
         
-        if (random == 0):
-            display.show(Image.SCISSOR)
+        if (random_number == 0):
+            display.show(Image.SCISSORS)
             display.sleep(5000)
             display.show(Image.HAPPY)
-        
-        if (random == 1):
+
+        if (random_number == 1):
             display.show(Image.SQUARE_SMALL)
             display.sleep(5000)
             display.show(Image.HAPPY)
-        
-        if (random == 2):
+
+        if (random_number == 2):
             display.show(Image.SQUARE)
             display.sleep(5000)
             display.show(Image.HAPPY)
