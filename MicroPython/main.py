@@ -17,15 +17,15 @@ while True:
         
         if (random == 0):
             display.show(Image.SCISSOR)
-            display.pause(1000)
+            display.sleep(5000)
             display.show(Image.HAPPY)
         
         if (random == 1):
             display.show(Image.SQUARE_SMALL)
-            display.pause(1000)
+            display.sleep(5000)
             display.show(Image.HAPPY)
         
         if (random == 2):
             display.show(Image.SQUARE)
-            display.pause(1000)
+            display.sleep(5000)
             display.show(Image.HAPPY)
