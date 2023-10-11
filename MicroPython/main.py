@@ -22,7 +22,11 @@ while True:
         random_number = random.randint(0, 2)
         
         if (random_number == 0):
-            display.show(Image.SCISSORS)
+            image = Image("99009:"
+                            "99090:"
+                            "00900:"
+                            "99090:"
+                            "99009:")
             display.sleep(5000)
             display.show(Image.HAPPY)
 
