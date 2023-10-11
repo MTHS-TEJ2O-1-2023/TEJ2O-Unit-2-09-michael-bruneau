@@ -15,9 +15,7 @@ while True:
         score = score + 1
         display.show(Image.YES)
         if button_b.is_pressed():
-            
-    
-    
+            display.scroll(str(score))
     
     gesture = accelerometer.current_gesture()
     if gesture == "face up":
