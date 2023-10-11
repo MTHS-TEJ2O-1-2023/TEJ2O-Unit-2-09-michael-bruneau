@@ -11,6 +11,14 @@ display.clear()
 display.show(Image.HAPPY)
 
 while True:
+    if button_a.is_pressed():
+        score = score + 1
+        display.show(Image.YES)
+        if button_b.is_pressed():
+            
+    
+    
+    
     gesture = accelerometer.current_gesture()
     if gesture == "face up":
         random.randint(0, 2)
