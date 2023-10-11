@@ -17,6 +17,7 @@ let score: number = 0
 input.onButtonPressed(Button.A, function () {
   score = score + 1
   basic.showIcon(IconNames.Yes)
+  basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
