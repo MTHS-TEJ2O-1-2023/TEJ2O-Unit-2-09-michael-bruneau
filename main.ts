@@ -21,6 +21,7 @@ input.onButtonPressed(Button.A, function () {
 
 input.onButtonPressed(Button.B, function () {
   basic.showNumber(score)
+  basic.showIcon(IconNames.Happy)
 })
 
 input.onGesture(Gesture.Shake, function () {
