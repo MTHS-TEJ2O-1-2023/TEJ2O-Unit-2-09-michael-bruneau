@@ -28,16 +28,13 @@ while True:
         if random_number == 0:
             scissors = Image("99009:" "99090:" "00900:" "99090:" "99009:")
             display.show(scissors)
-            sleep(5000)
-            display.show(Image.HAPPY)
 
         if random_number == 1:
             rock = Image("00000:" "09990:" "09990:" "09990:" "00000:")
             display.show(rock)
-            sleep(5000)
-            display.show(Image.HAPPY)
 
         if random_number == 2:
             display.show(Image.SQUARE)
-            sleep(5000)
-            display.show(Image.HAPPY)
+
+        sleep(5000)
+        display.show(Image.HAPPY)
