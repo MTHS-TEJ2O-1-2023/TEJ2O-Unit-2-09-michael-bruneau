@@ -18,7 +18,7 @@ while True:
             display.scroll(str(score))
     
     gesture = accelerometer.current_gesture()
-    if gesture == "face up":
+    if accelerometer.was_gesture("shake"):
         random_number = random.randint(0, 2)
         
         if (random_number == 0):
