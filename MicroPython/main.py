@@ -15,20 +15,25 @@ while True:
     if button_a.is_pressed():
         score = score + 1
         display.show(Image.YES)
-        if button_b.is_pressed():
-            display.scroll(str(score))
+        sleep(5000)
+        display.show(Image.HAPPY)
+
+    if button_b.is_pressed():
+        display.scroll(str(score))
 
     gesture = accelerometer.current_gesture()
     if accelerometer.was_gesture("shake"):
         random_number = random.randint(0, 2)
 
         if random_number == 0:
-            image = Image("99009:" "99090:" "00900:" "99090:" "99009:")
+            scissors = Image("99009:" "99090:" "00900:" "99090:" "99009:")
+            display.show(scissors)
             sleep(5000)
             display.show(Image.HAPPY)
 
         if random_number == 1:
-            display.show(Image.SQUARE_SMALL)
+            rock = Image("00000:" "09990:" "09990:" "09990:" "00000:")
+            display.show(rock)
             sleep(5000)
             display.show(Image.HAPPY)
 
