@@ -7,6 +7,7 @@ This module is a Micro:bit MicroPython program
 import random
 from microbit import *
 
+score = 0
 display.clear()
 display.show(Image.HAPPY)
 
