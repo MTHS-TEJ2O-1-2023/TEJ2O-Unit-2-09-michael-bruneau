@@ -28,15 +28,15 @@ while True:
                             "00900:"
                             "99090:"
                             "99009:")
-            display.sleep(5000)
+            sleep(5000)
             display.show(Image.HAPPY)
 
         if (random_number == 1):
             display.show(Image.SQUARE_SMALL)
-            display.sleep(5000)
+            sleep(5000)
             display.show(Image.HAPPY)
 
         if (random_number == 2):
             display.show(Image.SQUARE)
-            display.sleep(5000)
+            sleep(5000)
             display.show(Image.HAPPY)
